@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     position: fixed;
     top: 0;
     width: 95%;
@@ -25,6 +26,14 @@
     display: flex;
 }
 
+.navbar-container nav {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    word-spacing: 0.7;
+}
+
 .navbar-container nav ul li {
     margin-right: 2.1rem;
     font-size: 1.2rem;
@@ -32,6 +41,7 @@
     cursor: pointer;
     word-spacing: 0.7;
 }
+
 
 
 /* ?search-profile-section styling */
@@ -100,4 +110,92 @@
 .logo-container {
     width: 5.6rem;
     height: 3.8rem;
+}
+
+
+
+
+/* nav tab section */
+
+.nav-tab-info-container {
+    width: 60%;
+    height: 65vh;
+    /* border: 2px solid red; */
+    padding: 2rem;
+    position: absolute;
+
+    top: 67px;
+    left: 121px;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+.nav-tab-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+.nav-tab-section ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav .nav-tab-section ul li {
+    font-weight: 200;
+}
+
+nav .nav-tab-section span.headline {
+    color: rgb(209, 24, 55);
+}
+
+.nav-tab-studio-container {
+    position: absolute;
+    display: none;
+    width: 40%;
+    top: 67px;
+    left: 603px;
+    height: 65vh;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-tab-studio-container img:first-child {
+    width: 10.3rem;
+    height: 2.9rem;
+}
+
+.nav-tab-user-container {
+    position: absolute;
+    display: none;
+    width: 20%;
+    top: 67px;
+    left: 1020px;
+    /* border: 2px solid black; */
+}
+
+
+
+nav ul:hover+.nav-tab-info-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav span:hover+.nav-tab-studio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-ul li:first-child:hover+.nav-tab-user-container {
+    display: flex;
 }

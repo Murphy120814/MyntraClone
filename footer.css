@@ -1,18 +1,74 @@
 .footer-container {
-    background-color: blue;
+    background-color: rgba(241, 235, 235, 0.822);
     width: 100%;
-    min-height: 10rem;
     display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 10rem;
+    gap: 1rem;
+    padding: 2rem;
+    /* border-radius: 5rem; */
 }
 
 .section1 {
     margin-top: 5rem;
+
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    /* border: 2px solid red; */
+}
+
+.section1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .section1 span {
     font-weight: bolder;
     font-size: 1.1rem;
-    margin-bottom: 4rem;
+}
+
+.section1 div ul {
+    font-size: 1rem;
+}
+
+.section1 div ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section1 .mobile-links {
+    display: flex;
+
+}
+
+.section1 .mobile-links img {
+    width: 14rem;
+    height: 4.2rem;
+}
+
+.follow-icons {
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+
+    justify-content: start;
+    align-items: center;
+}
+
+.follow-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.section1 div.icon-container {
+    display: flex;
+}
+
+.icons {
+    width: 48px;
+    height: 40px;
 }

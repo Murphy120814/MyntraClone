@@ -1,4 +1,6 @@
 /*? boiler plate code */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
 *,
 *::before,
 *::after {
@@ -9,8 +11,10 @@
 }
 
 html {
-    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
-  }
+    font-size: 62.5%;
+    /* (62.5/100) * 16px = 10px */
+    font-family: 'Martian Mono', monospace;
+}
 
 img {
     display: block;
@@ -60,17 +64,38 @@ summary,
 /* ? utility declaration */
 
 
-.container{
+.container {
     width: 1350px;
     max-width: 95%;
     min-height: 100vh;
     margin: auto;
-    border: 2px solid orange ;
+    /* border: 2px solid orange; */
+
 }
+
+/* custome scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F41CB2;
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
     html {
-          scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
